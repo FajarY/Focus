@@ -12,6 +12,7 @@ import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.padding
 import androidx.compose.material3.CircularProgressIndicator
+import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Scaffold
 import androidx.compose.material3.Text
 import androidx.compose.material3.TextButton
@@ -21,6 +22,7 @@ import androidx.compose.runtime.remember
 import androidx.compose.runtime.setValue
 import androidx.compose.runtime.getValue
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.graphics.Brush
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.tooling.preview.Preview
@@ -81,7 +83,8 @@ fun FocusApp(modifier: Modifier, vm: AppViewModelInterface) {
     val error by vm.errorMessage.collectAsState()
     val isLoading by vm.isLoadingQuery.collectAsState()
 
-    Box(modifier = modifier.fillMaxSize().padding(top = 8.dp, bottom = 8.dp, start = 16.dp, end = 16.dp)) {
+    Box(modifier = modifier.fillMaxSize()
+        .padding(top = 8.dp, bottom = 8.dp, start = 16.dp, end = 16.dp)) {
         when {
             user == null && screenType == "register" -> RegisterScreen(vm)
             user == null && screenType == "login" -> LoginScreen(vm)

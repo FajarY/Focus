@@ -266,7 +266,7 @@ class AppViewModel(
             } else {
                 zenQuotesRepository.getTodayQuote()
             }
-            _currentZenQuote.value = "${quote.q} - ${quote.a}"
+            _currentZenQuote.value = "\"${quote.q}\"\n- ${quote.a}"
         } catch (e: Exception) {
             _currentZenQuote.value = "Cannot fetch quotes for now, you are in a good shape already!"
         } finally {

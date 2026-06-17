@@ -9,8 +9,10 @@ import androidx.compose.material3.*
 import androidx.compose.runtime.*
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
+import androidx.compose.ui.unit.sp
 import com.fajary.focus.ui.theme.FocusTheme
 import com.fajary.focus.viewmodel.AppViewModelInterface
 import com.fajary.focus.viewmodel.AppViewModelMock
@@ -60,8 +62,10 @@ fun InsertToDoItemScreen(vm: AppViewModelInterface) {
             IconButton(onClick = { vm.navigateTo("home") }) {
                 Icon(Icons.Default.ArrowBack, contentDescription = "Back")
             }
-            Text("New Task")
+            Text("New Task", fontWeight = FontWeight.Bold, fontSize = 16.sp)
         }
+
+        Spacer(modifier = Modifier.padding(8.dp))
 
         OutlinedTextField(
             value = title,
@@ -70,6 +74,9 @@ fun InsertToDoItemScreen(vm: AppViewModelInterface) {
             modifier = Modifier.fillMaxWidth(),
             singleLine = true
         )
+
+        Spacer(modifier = Modifier.padding(8.dp))
+
         OutlinedTextField(
             value = description,
             onValueChange = { vm.onToDoItemDescriptionChange(it) },
@@ -77,6 +84,9 @@ fun InsertToDoItemScreen(vm: AppViewModelInterface) {
             modifier = Modifier.fillMaxWidth().heightIn(min = 120.dp),
             singleLine = false
         )
+
+        Spacer(modifier = Modifier.padding(8.dp))
+
         OutlinedTextField(
             value = deadline ?: "",
             onValueChange = {},
@@ -96,7 +106,9 @@ fun InsertToDoItemScreen(vm: AppViewModelInterface) {
                 }
             }
         )
+
         Spacer(modifier = Modifier.height(16.dp))
+
         Button(
             onClick = { vm.insertToDoItem() },
             modifier = Modifier.fillMaxWidth()
