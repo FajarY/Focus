@@ -1,9 +1,13 @@
 # Product Requirements Document (PRD) — Focus App
 
 ## Anggota
+<div align="center">
+
 | Nama Anggota | NRP |
 |:---:|:---:|
 | Kadek Fajar Pramartha Yasodana | 5025231185 |
+
+</div>
 
 # APK File
 https://github.com/FajarY/Focus/releases/download/Release/Focus.apk
