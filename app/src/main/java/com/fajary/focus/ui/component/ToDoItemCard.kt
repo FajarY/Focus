@@ -14,6 +14,7 @@ import com.fajary.focus.data.model.ToDoItem
 import com.fajary.focus.ui.screen.HomeScreen
 import com.fajary.focus.ui.theme.FocusTheme
 import com.fajary.focus.viewmodel.AppViewModelMock
+import androidx.compose.runtime.collectAsState
 
 @Composable
 fun ToDoItemCard(
@@ -65,7 +66,7 @@ fun HomeScreenPreview() {
     FocusTheme {
         val viewModel = AppViewModelMock()
         ToDoItemCard(
-            item = viewModel.userToDoListItems.value[1],
+            item = viewModel.userToDoListItems.collectAsState().value[1],
             onUpdateClick = {
 
             },
