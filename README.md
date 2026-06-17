@@ -17,6 +17,9 @@
 ## File Presentasi
 https://docs.google.com/presentation/d/1nsJaWs2hh-HBGRIqEU9ugC9BHpq4ll_b/edit?usp=sharing&ouid=118235778697763966764&rtpof=true&sd=true
 
+## Video Presentasi
+https://youtu.be/38rkkR3CRZA
+
 ## APK File
 https://github.com/FajarY/Focus/releases/download/Release/Focus.apk
 
