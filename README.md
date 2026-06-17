@@ -9,13 +9,20 @@
 
 </div>
 
+# Screenshots
+<div align="center">
+  <img src="screenshots/app-screenshot.png" width="400" alt="All Screenshots">
+</div>
+
 # APK File
 https://github.com/FajarY/Focus/releases/download/Release/Focus.apk
 
 ## 1. Informasi Produk
 
 **Nama Produk:** Focus
+
 **Versi:** 1.0
+
 **Platform:** Android
 
 **Teknologi:**
@@ -70,7 +77,9 @@ Membangun aplikasi Android yang memungkinkan pengguna untuk:
 ## 6. User Persona
 
 **Nama:** Fajar
+
 **Umur:** 22 Tahun
+
 **Pekerjaan:** Mahasiswa Tingkat Akhir
 
 **Kebutuhan:**
